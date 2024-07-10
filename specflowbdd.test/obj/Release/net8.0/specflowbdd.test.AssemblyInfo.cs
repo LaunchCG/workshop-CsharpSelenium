@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("specflowbdd.test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36c608376dc3e1223f63e10b739a5b8544840773")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d9c2189610bb3895da06e1ff7ee358379842cca2")]
 [assembly: System.Reflection.AssemblyProductAttribute("specflowbdd.test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("specflowbdd.test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

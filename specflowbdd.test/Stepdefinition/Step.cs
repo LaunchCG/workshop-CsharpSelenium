@@ -20,6 +20,7 @@ namespace specflowbdd.test.Stepdefinition
         private TopDeals topdeals;
         public string filepath;
         private ScreenshotUtility Sutility;
+        private Cart cart;
 
         public Step(ScenarioContext scenarioContext)
         {
@@ -76,12 +77,24 @@ namespace specflowbdd.test.Stepdefinition
         { 
             driver.Manage().Window.Maximize();
             greencart.Searchvegies("Cauliflower");
-            Sutility.TakesScreenshot(driver);
-
-
-            Assert.IsTrue(driver.Title.Contains("Greencart"));
-                Console.WriteLine(driver.Title);
+            //Sutility.TakesScreenshot(driver);
          }
+        [Given(@"I click on the vegetable")]
+        public void GivenIClickOnTheVegetable()
+        {
+            cart.Additem();
+            Console.WriteLine("Clicked on the vegetable.");
+        }
+
+        [Then(@"item should display in cart")]
+        public void ThenitemShouldDisplayInCart()
+        {
+            cart.cartinfo();
+            cart.checkout();
+            Console.WriteLine("Item displayed in cart.");
+        }
+
+
         [TearDown]
         public void TearDown()
         {

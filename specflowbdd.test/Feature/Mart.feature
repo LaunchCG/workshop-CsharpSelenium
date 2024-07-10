@@ -1,7 +1,7 @@
 ﻿Feature: Mart
 Purchase Items from Greenkart
 @BDDframework
-Scenario: Vegetables
+Scenario: Vegetables Displayed
 	Given I open the browser and enter url
 	Given I click on practicepage
 	Given Enter
@@ -10,3 +10,6 @@ Scenario: Vegetables
 	Given click on Submit button
 	Given click on practice1
 	Then open Greenkart page
+Scenario: Vegetables added to cart
+	Given : I click on the vegetable
+	Then : item should display in cart
